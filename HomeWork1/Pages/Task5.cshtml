@@ -1,0 +1,25 @@
+﻿@page
+@model HomeWork1.Pages.Task5Model
+@{
+    ViewData["Title"] = "Task5";
+}
+<div>
+    <p>
+        Завдання 5:<br />
+        Створіть і запустіть базовий додаток ASP.NET Core, побудований
+        на основі ASP.NET Razor Pages. Додайте до базового додатка
+        нову сторінку. Сторінка має відображати інформацію про країни.
+        Доступ до сторінки за посиланням у верхньому меню сторінки.
+        Використовуйте можливості CSS для форматування списку
+    </p>
+    <ul>
+        @foreach (var country in Model.countries)
+        {
+            <li class="list-group-item card p-lg-3">
+                <h2>@country.Name</h2>
+                <p>Capital: @country.Capital</p>
+                <p>Population: @country.Population</p>
+            </li>
+        }
+    </ul>
+</div>

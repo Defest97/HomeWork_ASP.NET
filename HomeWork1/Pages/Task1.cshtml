@@ -1,0 +1,15 @@
+﻿@page
+@model HomeWork1.Pages.Task1Model
+@{
+    ViewData["Title"] = "Task1";
+    int dayOfCurrentYear = DateTime.Now.DayOfYear;
+}
+<div>
+    <p>
+        Завдання 1:<br />
+        Створіть і запустіть базовий додаток ASP.NET Core, побудований
+        на основі ASP.NET Razor Pages. На вебсторінці виведіть номер
+        поточного дня року.
+    </p>
+    <p>Hомер поточного дня року= @dayOfCurrentYear</p>
+</div>

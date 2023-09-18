@@ -1,0 +1,20 @@
+﻿@page
+@model HomeWork1.Pages.Task3Model
+@{
+    ViewData["Title"] = "Task3";
+}
+<div>
+    <p>
+        Завдання 3:<br />
+        Створіть і запустіть базовий додаток ASP.NET Core, побудований
+        на основі ASP.NET Razor Pages. Додайте до базового додатка
+        нову сторінку. Сторінка має відображати інформацію про
+        ресторан. Доступ до сторінки за посиланням у верхньому меню
+        сторінки.
+    </p>
+    <div>
+        <p>@Model.restaurant.Name</p>
+        <p>@Model.restaurant.Menu</p>
+        <p>@Model.restaurant.Location</p>
+    </div>
+</div>

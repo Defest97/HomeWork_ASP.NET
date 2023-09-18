@@ -1,0 +1,25 @@
+﻿@page
+@model HomeWork1.Pages.Task4Model
+@{
+    ViewData["Title"] = "Task4";
+}
+<div>
+    <p>
+        Завдання 4:<br />
+        Додайте до завдання 2 відображений список ресторанів.
+        Використовуйте можливості CSS для форматування списку.
+    </p>
+    <ul class="list-group">
+        @foreach(var restaurant in Model.restaurants)
+        {
+            <li class="list-group-item">
+                <ul class="list-group">
+                    <li class="list-group-item">@restaurant.Name</li>
+                    <li class="list-group-item">@restaurant.Menu</li>
+                    <li class="list-group-item">@restaurant.Location</li>
+                </ul>
+                
+            </li>
+        }
+    </ul>
+</div>
